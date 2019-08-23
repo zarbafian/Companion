@@ -1,23 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Companion.MainPage">
-    <StackLayout Margin="10,35,10,10">
-        <Label Text="My Companion"
-               HorizontalOptions="Center"
-               FontAttributes="Bold" />
-        <Editor x:Name="titleEditor"
-                Placeholder="Request type"
-                HeightRequest="100" />
-        <Editor x:Name="contentEditor"
-                Placeholder="Enter your request"
-                HeightRequest="100" />
+             x:Class="Companion.DemandEntryPage"
+             Title="Demand Creation">
+    <StackLayout Margin="20">
+        <Entry Placeholder="Request type"
+                Text="{Binding Title}"
+                HeightRequest="50" />
+        <Editor Placeholder="Enter your request"
+                Text="{Binding Content}"
+                HeightRequest="200" />
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Button Text="Save"
+            <Button Text="Send"
                     Clicked="OnSaveButtonClicked" />
             <Button Grid.Column="1"
                     Text="Delete"
