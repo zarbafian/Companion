@@ -3,16 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Companion.DemandsPage"
              Title="Requets">
+    
+    <ContentPage.Resources>
+        <!-- Implicit styles -->
+        <Style TargetType="{x:Type ListView}">
+            <Setter Property="BackgroundColor"
+                    Value="{StaticResource AppBackgroundColor}" />
+        </Style>
+        <!--
+        <Style TargetType="{x:Type TextCell}">
+            <Setter Property="TextColor"
+                    Value="{StaticResource AppPrimaryTextColor}" />
+            <Setter Property="DetailColor"
+                    Value="{StaticResource AppSecondaryTextColor}" />
+        </Style>
+        -->
+    </ContentPage.Resources>
+    
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="+" Clicked="OnDemandAddedClicked" />
     </ContentPage.ToolbarItems>
+    
     <ListView x:Name="listView"
-              Margin="20"
+              Margin="{StaticResource PageMargin}"
               ItemSelected="OnListViewItemSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <TextCell Text="{Binding Title}"
-                          Detail="{Binding Content}" />
+                          Detail="{Binding Content}"
+                          TextColor="{StaticResource AppPrimaryTextColor}"
+                          DetailColor="{StaticResource AppSecondaryTextColor}"/>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>

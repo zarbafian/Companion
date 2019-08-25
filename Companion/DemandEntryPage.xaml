@@ -3,7 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Companion.DemandEntryPage"
              Title="Demand Creation">
-    <StackLayout Margin="20">
+    
+    <ContentPage.Resources>
+        <!-- Implicit styles -->
+        <Style TargetType="{x:Type Entry}">
+            <Setter Property="BackgroundColor"
+                    Value="{StaticResource AppInputBackgroundColor}" />
+        </Style>
+        <Style TargetType="{x:Type Editor}">
+            <Setter Property="BackgroundColor"
+                    Value="{StaticResource AppInputBackgroundColor}" />
+        </Style>
+
+        <Style TargetType="Button"
+               ApplyToDerivedTypes="True"
+               CanCascade="True">
+            <Setter Property="FontSize" Value="Medium" />
+            <Setter Property="BackgroundColor" Value="LightGray" />
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="BorderRadius" Value="5" />
+        </Style>
+    </ContentPage.Resources>
+    
+    <StackLayout Margin="{StaticResource PageMargin}">
         <Entry Placeholder="Request type"
                 Text="{Binding Title}"
                 HeightRequest="50" />
