@@ -104,22 +104,13 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
-      <Visible>false</Visible>
-    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
-      <Visible>false</Visible>
-    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
@@ -140,6 +131,12 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\logo_splash_screen.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\logo_splash_screen.imageset\logo.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo_app_120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo_app_80.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo_app_180.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo_app_120-1.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -156,5 +153,8 @@
       <Project>{5F5797E1-DDAC-464E-B6B1-331FC9709FF1}</Project>
       <Name>Companion</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\logo_splash_screen.imageset\" />
   </ItemGroup>
 </Project>
