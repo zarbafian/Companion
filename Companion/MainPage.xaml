@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Companion.DemandsPage"
-             Title="Requets">
+             x:Class="Companion.MainPage"
+             Title="My Companion">
     
     <ContentPage.Resources>
         <!-- Implicit styles -->
@@ -12,19 +12,13 @@
         </Style>
     </ContentPage.Resources>
     
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="+" Clicked="OnDemandAddedClicked" />
-    </ContentPage.ToolbarItems>
-    
     <ListView x:Name="listView"
               Margin="{StaticResource PageMargin}"
               ItemSelected="OnListViewItemSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
-                <TextCell Text="{Binding Title}"
-                          Detail="{Binding Content}"
-                          TextColor="{StaticResource AppPrimaryTextColor}"
-                          DetailColor="{StaticResource AppSecondaryTextColor}"/>
+                <TextCell Text="{Binding Name}"
+                          TextColor="{StaticResource AppPrimaryTextColor}"/>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>

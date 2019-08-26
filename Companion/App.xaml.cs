@@ -12,7 +12,7 @@ namespace Companion
         {
             InitializeComponent();
             FolderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData));
-            MainPage = new NavigationPage(new DemandsPage());
+            MainPage = new NavigationPage(new MainPage());
         }
     }
 }
