@@ -137,6 +137,12 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo_app_80.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo_app_180.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo_app_120-1.png" />
+    <ImageAsset Include="Assets.xcassets\logo_splash_screen.imageset\logo-1.png" />
+    <ImageAsset Include="Assets.xcassets\logo_splash_screen.imageset\logo-2.png" />
+    <ImageAsset Include="Assets.xcassets\logo_splash_screen.imageset\logo-3.png" />
+    <ImageAsset Include="Assets.xcassets\logo_splash_screen.imageset\logo-4.png" />
+    <ImageAsset Include="Assets.xcassets\logo_splash_screen.imageset\logo-5.png" />
+    <ImageAsset Include="Assets.xcassets\logo_splash_screen.imageset\logo-6.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
